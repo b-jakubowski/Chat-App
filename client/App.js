@@ -31,7 +31,7 @@ class App extends Component {
 	}
 
 	handleMessageSubmit(message) {
-		const.messages = [message, ...this.state.messages];
+		const messages = [message, ...this.state.messages];
 		this.setState({messages});
 		socket.emit('message', message);
 	}

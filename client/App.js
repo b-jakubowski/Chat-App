@@ -59,7 +59,7 @@ class App extends Component {
 					</div>
 				</div>
 				<div className={styles.AppBody}>
-					<userList
+					<UsersList
 						users={this.state.users}
 					/>
 					<div className={styles.MessageWrapper}>

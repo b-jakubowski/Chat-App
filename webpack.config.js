@@ -9,7 +9,7 @@ var env = process.env.NODE_ENV || 'development';
 
 var plugins = [
     new HtmlWebpackPlugin({
-        template: 'src/index.html',
+        template: 'client/index.html',
         filename: 'index.html',
         inject: 'body'
     })
@@ -36,6 +36,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'public'),
 		filename: 'bundle.js'
 	},
+  plugins: plugins,
 	module: {
 		rules: [
 			{
